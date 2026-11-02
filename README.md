@@ -47,7 +47,7 @@ Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP:
 Este projeto utiliza ```Python 3``` e faz uso de um ambiente virtual ```(venv)``` para garantir o isolamento das dependências e a reprodutibilidade do ambiente de desenvolvimento.
 
 **1. Requisitos:**
-- **Python 3.10+** (recomendado)
+- **Python 3.11+** (recomendado)
 - ```pip``` (gerenciador de pacotes do Python)
 
 **2. Criação do ambiente virtual**
