@@ -1,6 +1,6 @@
 from datetime import datetime, UTC
 import pytest
-from backend.app.domain.models.Usuario import Usuario
+from app.domain.models.Usuario import Usuario
 
 # ========= FIXTURES =========
 @pytest.fixture

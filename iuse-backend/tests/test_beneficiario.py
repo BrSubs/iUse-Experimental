@@ -1,5 +1,5 @@
 import pytest
-from backend.app.domain.models.Beneficiario import Beneficiario
+from app.domain.models.Beneficiario import Beneficiario
 
 # ========= FIXTURES =========
 @pytest.fixture

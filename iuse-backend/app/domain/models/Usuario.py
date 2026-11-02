@@ -1,8 +1,8 @@
 from datetime import datetime, UTC
 from uuid import uuid4
 import hashlib
-from backend.app.utils.validadores import (validar_email, validar_nome, validar_uuid)
-from backend.app.domain.mixins.autenticavel_mixin import AutenticavelMixin
+from app.utils.validadores import (validar_email, validar_nome, validar_uuid)
+from app.domain.mixins.autenticavel_mixin import AutenticavelMixin
 
 class Usuario(AutenticavelMixin):
     def __init__(self, nome: str, email: str, senha: str, id: str | None = None, criado_em: datetime | None = None):
@@ -53,8 +53,8 @@ class Usuario(AutenticavelMixin):
         return hashlib.sha256(senha.encode()).hexdigest()
 
     # Método exigido pelo mixin
-    def verificar_senha(self, senha_digitada: str) -> bool:
-        return self.__senha_hash == self.__gerar_hash(senha_digitada)
+    def verificar_senha(self, senha: str) -> bool:
+        return self.__senha_hash == self.__gerar_hash(senha)
 
     # ===== Representações =====
     def __repr__(self):

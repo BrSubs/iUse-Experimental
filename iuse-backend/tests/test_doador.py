@@ -1,5 +1,5 @@
 import pytest
-from backend.app.domain.models.Doador import Doador
+from app.domain.models.Doador import Doador
 
 # ========= FIXTURES =========
 @pytest.fixture
